@@ -37,7 +37,8 @@ arreglo a y almacena el resultado en *suma.
 Utilice la función sumaN.
 */
 
-void sumaNultimos(int a[], int n, int m, int * suma) {
+void sumaNultimos(int a[], int n, int m, int * suma) 
+{
 
 }
 
@@ -55,7 +56,9 @@ typedef struct {
 } Persona;
 
 
-Persona* crearPersona(char nombre[], char rut[], int edad) {
+Persona* crearPersona(char nombre[], char rut[], int edad) 
+{
+    
    return NULL;
 }
 
