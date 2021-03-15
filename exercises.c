@@ -93,6 +93,7 @@ Vector * crearVector(int n)
 {
   Vector * v = (Vector*) calloc (n, sizeof(Vector));
   v->capacidad = n + 1;
+  printf("%i", v[1].capacidad);
   return v;
 }
 
