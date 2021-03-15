@@ -98,8 +98,7 @@ Vector * crearVector(int n)
 {
   Vector * v = calloc (1, sizeof(Vector));
   v->capacidad = *((int*) calloc (n, sizeof(int)));
-  v->datos = (int*) calloc (n, sizeof(int));
-  printf("capacidad %i, largo %i\n", v->capacidad, n);
+  v->datos = ((int*) calloc (n, sizeof(int)));
   return v;
 }
 
