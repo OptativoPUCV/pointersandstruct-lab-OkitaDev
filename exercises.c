@@ -37,7 +37,6 @@ Esta función debe sumar los últimos m números del
 arreglo a y almacena el resultado en *suma.
 Utilice la función sumaN.
 */
-
 void invertirVector(int a[], int n)
 {
   int i;
@@ -108,9 +107,11 @@ Ejercicio 5a.
 Programe la función void asignarValor(Vector * v, int i, int valor), 
 la cual asigna el valor a la posición i del vector v.
 */
+
 void asignarValor(Vector * v, int i, int valor) 
 {
   v[i].datos = &valor;
+  printf(" %i %i \n", *(v[2 - i].datos), i);
 
 }
 
@@ -121,7 +122,8 @@ la cual retorna el valor en la posición i del vector v.
 */
 int obtenerValor(Vector * v, int i) 
 {
-  return *(v[2-i].datos);
+  printf(" %i %i \n", *(v[2 - i].datos), i);
+  return *(v[i].datos);
 }
 
 /*
