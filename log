@@ -33,3 +33,9 @@ Mon Mar 15 03:32:51 UTC 2021:
  1 file changed, 8 insertions(+), 2 deletions(-)
  tests:  0|0
 6cd51c0
+Mon Mar 15 03:35:23 UTC 2021: 
+ exercises.c | 11 +++--------
+ 1 file changed, 3 insertions(+), 8 deletions(-)
+ tests:  2|5
+total_score: 20/70
+a661503
