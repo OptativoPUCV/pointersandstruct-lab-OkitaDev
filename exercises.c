@@ -133,12 +133,13 @@ actualiza el vector `c` con el resultado de la suma.
 void sumaV(Vector * a, Vector * b, Vector * c) 
 {
   int temporalA, temporalB, temporalC;
-  for(int i = 0; i < a->capacidad; i++)
+  int i;
+  for(i = 0; i < (a->capacidad); i++)
   {
     temporalA = *a[i].datos;
     temporalB = *b[i].datos;
     temporalC = temporalA + temporalB;
-    printf("%i %i %i %i\n", temporalA, temporalB, temporalC, i);
+    printf("%i %i %i\n", temporalA, temporalB, temporalC);
   }
 }
 
