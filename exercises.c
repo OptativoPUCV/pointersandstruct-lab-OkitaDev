@@ -67,8 +67,13 @@ typedef struct {
 
 Persona* crearPersona(char nombre[], char rut[], int edad) 
 {
-    
-   return NULL;
+   Persona * persona = NULL;
+   
+   strcpy(persona->nombre, nombre);
+   strcpy(persona->rut, rut);
+   persona->edad = edad;
+
+   return persona;
 }
 
 /*
@@ -84,7 +89,8 @@ typedef struct {
    int capacidad; // capacidad del arreglo
 } Vector;
 
-Vector * crearVector(int n) {
+Vector * crearVector(int n) 
+{
    return NULL;
 }
 
