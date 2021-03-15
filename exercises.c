@@ -92,7 +92,9 @@ typedef struct {
 Vector * crearVector(int n) 
 {
   Vector * v = (Vector*) calloc (n, sizeof(Vector));
-  printf("%i", v[1].capacidad);
+  for(int i = 0; i < n; i++)
+    printf("Array %i = %i\n", i, v[i].capacidad);
+
   return v;
 }
 
