@@ -133,7 +133,7 @@ actualiza el vector `c` con el resultado de la suma.
 void sumaV(Vector * a, Vector * b, Vector * c) 
 {
   int temporalA, temporalB, temporalC;
-  for(int i = 0; i < 3; i++)
+  for(int i = 0; i < a->capacidad; i++)
   {
     temporalA = *a[0].datos;
     temporalB = *b[0].datos;
