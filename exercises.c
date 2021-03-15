@@ -121,7 +121,7 @@ la cual retorna el valor en la posición i del vector v.
 */
 int obtenerValor(Vector * v, int i) 
 {
-  return *(v[2].datos);
+  return *(v[2-i].datos);
 }
 
 /*
