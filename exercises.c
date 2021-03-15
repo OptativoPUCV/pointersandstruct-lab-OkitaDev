@@ -139,7 +139,8 @@ void sumaV(Vector * a, Vector * b, Vector * c)
   
   for(i = 0; i < (a->capacidad); i++)
   {
-    *temporalA = *a[i].datos;
+    temporalA = a[i].datos;
+    printf("%i", *temporalA);
   }
 }
 
