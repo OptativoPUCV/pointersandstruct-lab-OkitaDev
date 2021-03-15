@@ -133,10 +133,13 @@ actualiza el vector `c` con el resultado de la suma.
 void sumaV(Vector * a, Vector * b, Vector * c) 
 {
   int i;
+  int *temporalA = malloc(sizeof(int));
+  //int *temporalB = malloc(sizeof(int));
+  //int *temporalC = malloc(sizeof(int));
   
   for(i = 0; i < (a->capacidad); i++)
   {
-    *c[i].datos = *(a[i].datos) + *(b[i].datos);
+    *temporalA = *a[i].datos;
   }
 }
 
