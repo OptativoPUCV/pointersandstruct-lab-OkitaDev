@@ -98,7 +98,7 @@ Vector * crearVector(int n)
 {
   Vector * v = calloc (1, sizeof(Vector));
   int capacidad;
-  capacidad = *((int*) calloc (n, sizeof(int)));
+  capacidad = *((int*) malloc (n * sizeof(int)));
   printf("capacidad %i, largo %i\n", capacidad, n);
   return v;
 }
