@@ -19,7 +19,8 @@ void suma(int a, int b, int * c)
 /*
 Esta función suma los N primeros números del arreglo a
 */
-int sumaN(int a[], int N) {
+int sumaN(int a[], int N) 
+{
     int i;
     int tot = 0;
 
@@ -64,7 +65,8 @@ crearPersona(...), la cual crea una nueva persona con
 los datos correspondientes y retorna un puntero al dato 
 recién creado.
 */
-typedef struct {
+typedef struct 
+{
   char nombre[30];
   char rut[11];
   int edad;
@@ -73,7 +75,7 @@ typedef struct {
 
 Persona* crearPersona(char nombre[], char rut[], int edad) 
 {
-   return NULL;
+  return NULL;
 }
 
 /*
@@ -91,13 +93,7 @@ typedef struct {
 
 Vector * crearVector(int n) 
 {
-  Vector * v = (Vector*) malloc (n * sizeof(Vector));
-  for(int i = 0; i < n; i++)
-  {
-    v[i].datos = 0; 
-    printf("Array %i = %i\n", i, v[i].capacidad);
-  }
-  return v;
+  return NULL;
 }
 
 /*
@@ -116,7 +112,7 @@ Programe la función int obtenerValor(Vector * v, int i),
 la cual retorna el valor en la posición i del vector v.
 */
 int obtenerValor(Vector * v, int i) {
-   return 0;
+  return v->datos[i];
 }
 
 /*
