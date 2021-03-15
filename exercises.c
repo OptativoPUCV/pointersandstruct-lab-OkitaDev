@@ -110,7 +110,7 @@ la cual asigna el valor a la posición i del vector v.
 
 void asignarValor(Vector * v, int i, int valor) 
 {
-  v[i].datos = &valor;
+  v[v->capacidad - i].datos = &valor;
 }
 
 /*
@@ -132,15 +132,9 @@ actualiza el vector `c` con el resultado de la suma.
 */
 void sumaV(Vector * a, Vector * b, Vector * c) 
 {
-  int i;
-  int *temporalA = malloc(sizeof(int));
-  //int *temporalB = malloc(sizeof(int));
-  //int *temporalC = malloc(sizeof(int));
-  
-  for(i = 0; i < (a->capacidad); i++)
+  for(int i = 0; i < a->capacidad; i++)
   {
-    temporalA = a[i].datos;
-    printf("%i", *temporalA);
+
   }
 }
 
