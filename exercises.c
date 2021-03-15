@@ -110,9 +110,7 @@ la cual asigna el valor a la posición i del vector v.
 
 void asignarValor(Vector * v, int i, int valor) 
 {
-  i = v->capacidad - i - 1;
   v[i].datos = &valor;
-  printf("%i %i\n", *v[i].datos, i);
 }
 
 /*
@@ -147,5 +145,5 @@ sumar (a1,a2)+(b1+b2). Almacene el resultado en el vector c.
 */
 void sumaV2(int a1, int a2, int b1, int b2, Vector *c)
 {
-
+  c->datos[0] = (a1 + b1); 
 }
