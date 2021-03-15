@@ -98,7 +98,7 @@ typedef struct {
 Vector * crearVector(int n) 
 {
   Vector * v = malloc (sizeof(Vector));
-  v->capacidad = *((int*) calloc(n, sizeof(Vector)));
+  v->capacidad = *((int*) malloc (n * sizeof(Vector)));
   printf("capacidad %i, datos %i\n", v->capacidad, n);
   return v;
 }
