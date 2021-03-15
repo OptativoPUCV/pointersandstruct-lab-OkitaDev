@@ -245,3 +245,9 @@ Mon Mar 15 18:08:46 UTC 2021:
  1 file changed, 2 deletions(-)
  tests:  0|0
 ea14cfb
+Mon Mar 15 18:09:34 UTC 2021: 
+ exercises.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+ tests:  3|4
+total_score: 30/70
+174490f
