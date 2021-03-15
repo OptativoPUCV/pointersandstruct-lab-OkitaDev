@@ -120,7 +120,7 @@ la cual retorna el valor en la posición i del vector v.
 */
 int obtenerValor(Vector * v, int i) 
 {
-  int temporal = *(v[i].datos);
+  int temporal = *(v[2].datos);
 
   return temporal;
 }
@@ -132,11 +132,7 @@ actualiza el vector `c` con el resultado de la suma.
 */
 void sumaV(Vector * a, Vector * b, Vector * c) 
 {
-  for(int i = 0; i < 3; i++)
-  {
-    c[i].datos = 0;
-    printf("%i + %i = %i", *a[i].datos, *b[i].datos, *c[i].datos);
-  }
+
 }
 
 /*
