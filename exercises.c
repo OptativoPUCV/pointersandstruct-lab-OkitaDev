@@ -93,8 +93,10 @@ Vector * crearVector(int n)
 {
   Vector * v = (Vector*) malloc (n * sizeof(Vector));
   for(int i = 0; i < n; i++)
+  {
+    v[i].datos = 0; 
     printf("Array %i = %i\n", i, v[i].capacidad);
-
+  }
   return v;
 }
 
