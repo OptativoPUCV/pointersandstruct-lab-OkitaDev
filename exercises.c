@@ -37,19 +37,25 @@ arreglo a y almacena el resultado en *suma.
 Utilice la función sumaN.
 */
 
-void sumaNultimos(int a[], int n, int m, int * suma) 
+void invertirVector(int a[], int n)
 {
   int i;
   int aux;
+
   for(i = 0; i < n/2; i++)
   {
     aux = a[i];
     a[i] = a[n - i - 1];
     a[n - i - 1] = aux;
   }
+}
 
+void sumaNultimos(int a[], int n, int m, int * suma) 
+{
+  invertirVector(a, n);
   *suma = sumaN(a, m);
 }
+
 
 /*
 Ejercicio 3.
