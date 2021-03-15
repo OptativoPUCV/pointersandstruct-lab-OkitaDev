@@ -96,7 +96,7 @@ typedef struct {
 
 Vector * crearVector(int n) 
 {
-  Vector * v = malloc (sizeof(Vector));
+  Vector * v = calloc (1, sizeof(Vector));
   v->capacidad = *((int*) calloc (n, sizeof(int)));
   printf("capacidad %i, largo %i\n", v->capacidad, n);
   return v;
@@ -111,8 +111,6 @@ la cual asigna el valor a la posición i del vector v.
 void asignarValor(Vector * v, int i, int valor) 
 {
   v[i].datos = &valor;
-  printf(" %i %i \n", *(v[i].datos), i);
-
 }
 
 /*
