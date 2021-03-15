@@ -110,8 +110,8 @@ la cual asigna el valor a la posición i del vector v.
 
 void asignarValor(Vector * v, int i, int valor) 
 {
-  v[v->capacidad - 2 - i].datos = &valor;
-  printf("%i\n", *v[i].datos);
+  v[v->capacidad - i].datos = &valor;
+  printf("%i %i\n", *v[i].datos, v[i].capacidad);
 }
 
 /*
