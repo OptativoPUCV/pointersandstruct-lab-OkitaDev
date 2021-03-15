@@ -134,7 +134,8 @@ void sumaV(Vector * a, Vector * b, Vector * c)
 {
   for(int i = 0; i < 3; i++)
   {
-    c[i].datos = *a[i].datos + b[i].datos;
+    c[i].datos = 0;
+    printf("%i + %i = %i", *a[i].datos, *b[i].datos, *c[i].datos);
   }
 }
 
