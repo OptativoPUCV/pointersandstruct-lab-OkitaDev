@@ -120,9 +120,12 @@ la cual retorna el valor en la posición i del vector v.
 */
 int obtenerValor(Vector * v, int i) 
 {
-  int temporal = *(v[i].datos);
-
-  return temporal;
+	for(int x = 0; x < 3; x++)
+	{
+		printf("i = %i, valor %i", x, *v->datos);
+	}
+	printf("\n");
+	return 0;
 }
 
 /*
