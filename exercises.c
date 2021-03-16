@@ -125,7 +125,7 @@ int obtenerValor(Vector * v, int i)
 		printf("i = %i, valor %i", x, *v->datos);
 	}
 	printf("\n");
-	return 0;
+	return *v->datos;
 }
 
 /*
