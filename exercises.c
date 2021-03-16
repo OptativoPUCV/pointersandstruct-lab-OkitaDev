@@ -112,7 +112,7 @@ void asignarValor(Vector * v, int i, int valor)
 {
 	int * temporal = &valor;
 	v[i].datos = temporal;
-	if(i == 1)
+	if(i == 2)
 	{
 		for(int x = 0; x < 3; x++)
 			printf("%i ", *v[x].datos);
@@ -136,7 +136,7 @@ actualiza el vector `c` con el resultado de la suma.
 */
 void sumaV(Vector * a, Vector * b, Vector * c) 
 {
-	for(int i = 0; i < a->capacidad; i++)
+	for(int i = 0; i < 2; i++)
 	{
 		c[i].datos = a[i].datos + *b[i].datos;
 		printf("%i %i %i\n", *a[i].datos, *b[i].datos, *c[i].datos);
