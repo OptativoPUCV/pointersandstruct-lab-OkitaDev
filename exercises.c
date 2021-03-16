@@ -110,7 +110,7 @@ la cual asigna el valor a la posición i del vector v.
 
 void asignarValor(Vector * v, int i, int valor) 
 {
-	if(i == 0) 
+	//if(i == 0) 
 	{
 		int *x = &valor;
 		v[i].datos = x;
