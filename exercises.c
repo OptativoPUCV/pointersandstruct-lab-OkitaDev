@@ -115,7 +115,7 @@ void asignarValor(Vector * v, int i, int valor)
 	if(i == 2)
 	for(int i = 0; i < v->capacidad; i++)
 	{
-		printf("%i \n", *v[i].datos);
+		printf("%i \n", *(v[i].datos));
 	}
 }
 
