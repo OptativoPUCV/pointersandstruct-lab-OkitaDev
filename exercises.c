@@ -110,18 +110,9 @@ la cual asigna el valor a la posición i del vector v.
 
 void asignarValor(Vector * v, int i, int valor) 
 {
-	printf("i = %i\n", i);
-  v[i].datos = &valor;
-
-	/*if(i == 1)
-	{
-		for(int x = 0; x < 2; x++)
-		{
-			printf("i = %i, valor %i", x, *v->datos);
-		}
-	printf("\n");
-	}*/
-
+	int * x = &valor;
+	printf("i = %i, valor = %i\n", i, *x);
+	
 }
 
 /*
