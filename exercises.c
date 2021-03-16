@@ -113,6 +113,7 @@ void asignarValor(Vector * v, int i, int valor)
 	if(i == 0) 
 	{
 		int *x = &valor;
+		v[i].datos = x;
 		printf("i = %i, valor = %i\n", i, *x);
 	}
 	if(i == 1) {int * y = &valor;
