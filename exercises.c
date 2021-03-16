@@ -113,14 +113,14 @@ void asignarValor(Vector * v, int i, int valor)
 	printf("i = %i\n", i);
   v[i].datos = &valor;
 
-	if(i == 1)
+	/*if(i == 1)
 	{
 		for(int x = 0; x < 2; x++)
 		{
 			printf("i = %i, valor %i", x, *v->datos);
 		}
 	printf("\n");
-	}
+	}*/
 
 }
 
