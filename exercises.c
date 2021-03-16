@@ -132,10 +132,7 @@ void sumaV(Vector * a, Vector * b, Vector * c)
 {
 	for(int i = 0; i < 2; i++)
 	{
-		int temporalA = *a[i].datos;
-		int temporalB = *b[i].datos;
-
-		printf("%i %i \n", temporalA, temporalB);
+		c->datos[i] = a->datos[i] + b->datos[i]; 
 	}
 }
 
