@@ -110,13 +110,7 @@ la cual asigna el valor a la posición i del vector v.
 
 void asignarValor(Vector * v, int i, int valor) 
 {
-	int * temporal = &valor;
-	v[i].datos = temporal;
-	if(i == 2)
-	{
-		for(int x = 0; x < 3; x++)
-			printf("%i ", *v[x].datos);
-	}
+	v->datos[i] = valor;
 }
 
 /*
