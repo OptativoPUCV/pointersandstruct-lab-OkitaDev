@@ -972,3 +972,8 @@ Tue Mar 16 22:25:41 UTC 2021:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 e2ab0fe
+Tue Mar 16 22:30:04 UTC 2021: 
+ exercises.c | 8 ++------
+ 1 file changed, 2 insertions(+), 6 deletions(-)
+ tests:  0|0
+4ba1388
