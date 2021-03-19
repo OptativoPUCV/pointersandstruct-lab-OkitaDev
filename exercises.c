@@ -52,8 +52,8 @@ void invertirVector(int a[], int n)
 
 void sumaNultimos(int a[], int n, int m, int * suma) 
 {
-  invertirVector(a, n);
-  *suma = sumaN(a, m);
+  //invertirVector(a, n);
+  *suma = sumaN(a + (n - m), m);
 }
 
 
