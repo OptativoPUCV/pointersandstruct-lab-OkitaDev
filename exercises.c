@@ -37,22 +37,9 @@ Esta función debe sumar los últimos m números del
 arreglo a y almacena el resultado en *suma.
 Utilice la función sumaN.
 */
-void invertirVector(int a[], int n)
-{
-  int i;
-  int aux;
-
-  for(i = 0; i < n/2; i++)
-  {
-    aux = a[i];
-    a[i] = a[n - i - 1];
-    a[n - i - 1] = aux;
-  }
-}
 
 void sumaNultimos(int a[], int n, int m, int * suma) 
 {
-  //invertirVector(a, n);
   *suma = sumaN(a + (n - m), m);
 }
 
